@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/receipeImg"
+            android:layout_marginTop="-14dp"
+            android:layout_marginBottom="-14dp"
+             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_rounded_corner_leftside"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:orientation="vertical">
+                <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veggie Bowl"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/nameTv"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameTv"
+                    android:visibility="gone"
+                    android:textColor="@color/green"
+                    android:id="@+id/missing_ingreidents_tv"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_11sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/iv_fav"
+                android:src="@drawable/ic_star"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

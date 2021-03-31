@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/alert"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_nointernet" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/no_internet_message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:background="@color/green"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/darkblue"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

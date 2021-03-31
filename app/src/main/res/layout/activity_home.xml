@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.activities.HomeActivity">
+
+    <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+        android:id="@+id/tv_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/discover"
+        android:textColor="@color/darkblue"
+        android:textSize="@dimen/_16sdp" />
+    <View
+        android:id="@+id/discoverView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_below="@id/tv_discover"
+        android:background="@color/green" />
+    <ImageView
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_18sdp"
+        android:src="@drawable/ic_logout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipesRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/progressBar"
+        android:layout_below="@id/discoverView"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:overScrollMode="never" />
+
+    <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
+        android:id="@+id/tv_nodataTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_20sdp"
+        android:text="@string/no_receipe_found"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+</RelativeLayout>

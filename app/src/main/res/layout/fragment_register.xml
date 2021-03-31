@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_14sdp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_13sdp"
+                    android:text="@string/enter_your_n_account_details"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/_17sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <com.softradix.recipes.fontClasses.EditTextPoppinsMedium
+                    android:id="@+id/firstname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@drawable/bg_white_solid"
+                    android:backgroundTint="#40081C4F"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.softradix.recipes.fontClasses.EditTextPoppinsMedium
+                    android:id="@+id/lastname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_white_solid"
+                    android:backgroundTint="#40081C4F"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.softradix.recipes.fontClasses.EditTextPoppinsMedium
+                    android:id="@+id/email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_white_solid"
+                    android:backgroundTint="#40081C4F"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.softradix.recipes.fontClasses.EditTextPoppinsMedium
+                    android:id="@+id/pasword_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_white_solid"
+                    android:backgroundTint="#40081C4F"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/tnC_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white" />
+
+                    <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_agree_to_swate_terms_of_service"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:orientation="vertical">
+
+                    <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/bg_white_circle"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_11sdp"
+                        android:text="@string/terms_of_service"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableStart="@drawable/bg_white_circle"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_11sdp"
+                        android:text="@string/privacy_policy"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry" />
+
+                    <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableStart="@drawable/bg_white_circle"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_11sdp"
+                        android:text="@string/cookie_use"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/notifi_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:buttonTint="@color/white" />
+
+                    <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_me_updated"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll"
+                android:layout_alignParentBottom="true">
+
+                <com.softradix.recipes.fontClasses.ButtonPoppinsMedium
+                    android:id="@+id/continue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_45sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/bg_white_stroke"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/continue_txt"
+                    android:textAllCaps="false"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

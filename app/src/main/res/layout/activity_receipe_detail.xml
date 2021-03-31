@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_210sdp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.softradix.recipes.utils.RoundishImageView
+                    android:id="@+id/recipeImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:cornerRadius="@dimen/_35sdp"
+                    app:roundedCorners="bottomLeft" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:padding="@dimen/_13sdp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <ImageView
+                android:id="@+id/ivstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:padding="@dimen/_13sdp"
+                android:src="@drawable/ic_star" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/bg_rounded_corner_leftside"
+            android:elevation="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/servings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/decreementLay"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/bg_green_stroke">
+
+                        <ImageView
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_9sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_minus" />
+
+                    </RelativeLayout>
+
+                    <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+                        android:id="@+id/quantityCountTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/increementLay"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/bg_green_stroke"
+                        android:backgroundTint="@color/green">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_add"
+                            app:tint="@color/white" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="-5dp"
+            android:orientation="vertical">
+
+            <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+                android:id="@+id/recipeNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veggie Bowl"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.softradix.recipes.fontClasses.TextViewRobotoRegular
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 min"
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.softradix.recipes.fontClasses.TextViewRobotoRegular
+                android:id="@+id/foodTypeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/bg_grey_stroke"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Vegetarian"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <com.softradix.recipes.fontClasses.TextViewRobotoRegular
+                    android:id="@+id/missingIngredientTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="No missing ingredients"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <com.softradix.recipes.fontClasses.TextViewRobotoRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="#FCE6E6"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="avacado"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ingredientsRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:text="Directions"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+            <com.softradix.recipes.fontClasses.TextViewRobotoRegular
+                android:id="@+id/directionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <com.softradix.recipes.fontClasses.TextViewRobotoMedium
+                android:id="@+id/cook_txtbtn"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/bg_white_stroke"
+                android:gravity="center_horizontal"
+                android:backgroundTint="@color/green"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="@string/i_cooked_this"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
