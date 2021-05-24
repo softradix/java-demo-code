@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash"
+    android:orientation="vertical"
     android:weightSum="3"
     tools:context=".views.activities.WelcomeActivity">
 
@@ -14,13 +14,14 @@
         android:layout_height="0dp"
         android:layout_weight="1.8"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
-            android:layout_gravity="center_horizontal"
             android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/_20sdp"
-            android:src="@drawable/ic_logo"/>
+            android:src="@drawable/ic_logo" />
 
         <com.softradix.recipes.fontClasses.TextViewPoppinsMedium
             android:layout_width="wrap_content"
@@ -33,6 +34,7 @@
             android:textColor="#fff"
             android:textSize="@dimen/_18sdp" />
     </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/bottom_lay"
         android:layout_width="match_parent"
@@ -48,8 +50,8 @@
             android:layout_marginHorizontal="@dimen/_45sdp"
             android:layout_marginVertical="@dimen/_10sdp"
             android:background="@drawable/bg_white_stroke"
-            android:text="@string/join_swate"
             android:backgroundTint="@color/white"
+            android:text="@string/join_swate"
             android:textAllCaps="false"
             android:textColor="@color/darkblue"
             android:textSize="@dimen/_13sdp" />

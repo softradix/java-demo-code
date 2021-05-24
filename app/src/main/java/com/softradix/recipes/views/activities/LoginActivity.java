@@ -18,7 +18,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(R.style.theme1);
         setContentView(R.layout.activity_login);
-
         setListeners();
     }
 
@@ -39,6 +38,4 @@ public class LoginActivity extends AppCompatActivity {
         fts.commit();
 
     }
-
-
 }
